@@ -1,0 +1,128 @@
+.table--footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px 16px;
+  position: sticky;
+  left: 0;
+  bottom: -1px;
+  background-color: var(--background-color);
+  z-index: 999;
+}
+.table--footer-left {
+  font-size: 13px;
+}
+.total-records {
+  font-weight: 600;
+}
+
+.selected-records {
+  font-size: 11px;
+  /* color: #111; */
+  margin-left: 2px;
+}
+.table--footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.table--footer-total {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 2px;
+}
+
+.table--footer .dropdown-wrapper {
+  position: absolute;
+  right: -1px;
+  top: calc(100% + 2px);
+  background-color: var(--background-color);
+  z-index: 999;
+  border: 1px solid #ccc;
+  width: calc(100% + 3px);
+}
+
+.table--footer-paginating {
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+}
+
+.table--footer-limit {
+  margin-right: 4px;
+}
+
+.paginating-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 8px;
+}
+
+.paginating-page-before {
+  transform: rotate(90deg);
+  margin: 0 16px;
+}
+
+.paginating-page-after {
+  transform: rotate(-90deg);
+}
+
+.paginating-page:not(.more):hover {
+  background-color: #ccc;
+}
+
+.paginating-page:not(.more) {
+  cursor: pointer;
+  padding: 0 8px;
+}
+
+.paginating-page.more {
+  padding: 0 8px;
+  cursor: text;
+}
+
+.paginating-page.active {
+  border: 1px solid var(--color-primary);
+}
+
+.paginating-page.disabled {
+  cursor: context-menu;
+  opacity: 0.4;
+}
+
+.paginating-page.disabled:hover {
+  background-color: unset;
+  opacity: 0.4;
+}
+.table--footer-total {
+  margin-right: 16px;
+}
+
+.icon-arrow-down {
+  background-position: -556px -355px;
+}
+.table--footer-total .icon-arrow-down {
+  scale: 0.8;
+  background-position: 56.41% 18.97%;
+}
+
+.table--footer-total.choosing .icon-arrow-down {
+  transform: rotate(180deg);
+}
+
+.table--footer-total .dropdown-wrapper {
+  width: 76px;
+  padding: 4px 0;
+  top: -160px !important;
+}
+
+.table--footer-total .dropdown-wrapper .item {
+  padding: 4px 8px;
+}
+
+.table--footer-total .dropdown-wrapper .item {
+  min-width: unset;
+}

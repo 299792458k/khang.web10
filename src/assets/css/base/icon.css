@@ -1,0 +1,94 @@
+/* sidebar icons */
+.icon-sidebar-dashboard {
+  background-position: -30px -1628px;
+}
+
+.icon-sidebar-cash {
+  background-position: -73px -1628px;
+}
+.icon-sidebar-bank {
+  background-position: -117px -1628px;
+}
+.icon-sidebar-purchase {
+  background-position: -161px -1628px;
+}
+.icon-sidebar-cart {
+  background-position: -204px -1628px;
+}
+.icon-sidebar-bill {
+  background-position: -249px -1628px;
+}
+.icon-sidebar-storage {
+  background-position: -291px -1628px;
+}
+.icon-sidebar-tool {
+  background-position: -336px -1628px;
+}
+.icon-sidebar-asset {
+  background-position: -378px -1630px;
+}
+.icon-sidebar-salary {
+  background-position: -467px -1659px;
+}
+.icon-sidebar-tax {
+  background-position: -423px -1630px;
+}
+.icon-sidebar-price {
+  background-position: -467px -1628px;
+}
+.icon-sidebar-general {
+  background-position: -510px -1628px;
+}
+.icon-sidebar-budget {
+  background-position: -378px -1659px;
+}
+.icon-sidebar-report {
+  background-position: -547px -1628px;
+}
+.icon-sidebar-finance {
+  background-position: -204px -1664px;
+}
+
+.icon-excel {
+  background-position: -704px -200px;
+}
+
+/* --end */
+.icon-arrow-down {
+  background-position: 56.41% 18.9%;
+}
+
+.icon-dropdown-light {
+  background-position: -555px -354px;
+}
+
+.icon-left {
+  background-position: -30px 18.95%;
+}
+.icon-right {
+  background-position: -76px 18.95%;
+}
+
+.icon-dropdown {
+  display: inline-block;
+  background-position: 44.8% 19%;
+}
+
+.icon {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../images/Sprites.64af8f61.svg");
+  background-repeat: no-repeat;
+}
+
+.icon:hover {
+  opacity: 0.8;
+}
+
+.icon--small {
+  width: 16px;
+  height: 16px;
+  background-image: url("../../images/Sprites.64af8f61.svg");
+  background-repeat: no-repeat;
+}

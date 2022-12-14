@@ -1,0 +1,141 @@
+.form-content {
+  cursor: grab;
+  min-width: 900px;
+  width: 900px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  line-height: 32px;
+}
+
+.header-left h2 {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 0;
+  cursor: text;
+}
+
+.checkbox {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox label {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.checkbox + .checkbox {
+  margin-left: 12px;
+}
+
+.checkbox input {
+  cursor: pointer;
+  margin-right: 8px;
+  width: 18px;
+  height: 16px;
+}
+
+.header-actions {
+  display: flex;
+}
+.icon-infor {
+  margin-right: 12px;
+  cursor: pointer;
+  background-position: -89px -144px;
+}
+
+.icon-close {
+  background-position: -144px -144px;
+  cursor: pointer;
+}
+
+/*
+* body
+*/
+.form-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+  padding: 0 24px 24px 24px;
+}
+.body-top {
+  display: flex;
+  width: 100%;
+  /* background-color: red; */
+}
+
+.body-top--left {
+  width: 50%;
+  margin-right: 24px;
+}
+
+.form-row {
+  display: flex;
+}
+
+.form-row + .form-row {
+  margin-top: 14px;
+}
+.body-top--right {
+  width: 50%;
+}
+.body-bottom {
+  margin-top: 24px;
+  width: 100%;
+  /* background-color: green; */
+}
+
+.wrapper {
+  position: relative;
+}
+.wrapper + .wrapper {
+  margin-left: 8px;
+}
+
+.footer {
+  padding: 12px 24px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-save {
+  margin-right: 8px;
+}
+
+.footer--right {
+  display: flex;
+}
+
+.wrapper.error .errorMessage {
+  color: #e61d1d;
+  font-size: 9px;
+  line-height: 9px;
+  position: absolute;
+  font-weight: 400;
+  top: calc(100% + 2px);
+  z-index: 1;
+  margin-top: 1px;
+}
+
+.wrapper.error:has(input:hover) .errorMessage {
+  display: block;
+}

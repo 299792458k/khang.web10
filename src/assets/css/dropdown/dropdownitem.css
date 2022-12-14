@@ -1,0 +1,17 @@
+.item {
+  white-space: nowrap;
+  padding: 6px 8px;
+  cursor: pointer;
+  min-width: 96px;
+}
+.item:hover {
+  background-color: #ccc;
+  color: var(--color-primary);
+}
+/* .item + .item {
+  border-top: 1px solid #ddd;
+} */
+
+.item.active {
+  color: var(--color-primary);
+}

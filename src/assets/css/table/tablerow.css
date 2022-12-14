@@ -1,0 +1,159 @@
+.t-row {
+  position: relative;
+  display: flex;
+  min-width: 100%;
+}
+
+.t-row.checked,
+.t-row.checked .checkbox,
+.t-row.checked .t-functional,
+.t-row:not(.t-head):hover,
+.t-row:not(.t-head):hover .checkbox,
+.t-row:not(.t-head):hover .t-functional {
+  background-color: #dee9ef;
+}
+
+.t-row.t-head {
+  position: sticky;
+  top: 76px;
+  z-index: calc(var(--table-sticky-index) + 1);
+}
+
+.t-head .t-cell {
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: #ccc;
+}
+
+.t-cell:not(.checkbox) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.t-cell {
+  padding: 10px 8px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.t-cell:not(.t-space, .checkbox, :last-child) {
+  min-width: 200px;
+}
+
+.t-cell.fl-1 {
+  flex: 1;
+  min-width: 160px;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.t-cell.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  flex: unset;
+}
+
+/* .t-cell .checkbox {
+  background-position: 1.5% 25%;
+} */
+
+.t-cell.name {
+  flex: unset;
+  /* min-width: 400px; */
+  min-width: 224px;
+}
+
+.t-cell.t-space {
+  background-color: var(--background-color);
+  border: 0;
+  z-index: 999;
+}
+.t-cell:first-child.t-space {
+  position: sticky;
+  left: 0;
+}
+.t-cell:last-child.t-space {
+  position: sticky;
+  right: 0;
+}
+.t-cell .k-tooltip {
+  top: 24px;
+  right: 2px;
+}
+.t-head .t-cell.checkbox {
+  background-color: #ccc;
+}
+.t-cell.checkbox {
+  /* padding: 10px 8px; */
+  position: sticky;
+  background-color: var(--background-color);
+  z-index: var(--table-sticky-index);
+  left: 16px;
+}
+
+.t-head .t-cell.t-functional {
+  background-color: #ccc;
+  position: sticky;
+  right: 0;
+}
+.t-cell.t-functional {
+  position: sticky;
+  right: 0;
+  border-left: 1px solid #ccc;
+  border-right: unset;
+  background-color: var(--background-color);
+  flex: unset;
+  min-width: 102px;
+  display: flex;
+  justify-content: center;
+}
+
+.t-cell:not(.heading).t-functional {
+  color: #006dc5;
+  font-weight: 600;
+}
+
+.modify {
+  cursor: pointer;
+}
+.t-cell.t-space {
+  /* position: sticky; */
+  right: 0px;
+  width: 8px;
+  max-width: 8px;
+}
+.t-cell .icon-dropdown {
+  cursor: pointer;
+  transform: translateY(3px);
+  margin-left: 12px;
+  width: 28px;
+  height: 18px;
+}
+
+.t-cell .icon-dropdown.active {
+  border: 1px solid #006dc5;
+}
+
+.t-cell .icon-dropdown:hover {
+  border: 1px solid #006dc5;
+}
+
+.t-cell.t-margin {
+  flex: unset;
+  border: unset;
+  /* position: sticky; */
+  right: 0px;
+  width: 24px !important;
+  background-color: #eceef1;
+}
+
+.table-row-dropdown {
+  position: fixed;
+  right: 80px;
+  padding: 4px 0;
+}

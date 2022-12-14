@@ -1,0 +1,31 @@
+.btn {
+  min-width: 80px;
+  width: max-content;
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 4px;
+  font-weight: 550;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #333;
+}
+
+.btn + .btn {
+  margin-left: 8px;
+}
+
+.btn:not(.btn--main):hover {
+  background-color: #ccc;
+}
+
+.btn--main {
+  border: unset;
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.btn--main:hover {
+  background: var(--color-primary-hover);
+}

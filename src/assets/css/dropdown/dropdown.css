@@ -1,0 +1,9 @@
+.dropdown-wrapper {
+  position: absolute;
+  right: 30%;
+  top: 80%;
+  background-color: var(--background-color);
+  z-index: 999;
+  border: 1px solid #ccc;
+  width: fit-content;
+}

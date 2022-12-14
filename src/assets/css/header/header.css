@@ -1,0 +1,46 @@
+.header-left h2 {
+  margin-right: 32px;
+}
+.header-left--icon {
+  background-position: 42.3% 1.6%;
+  transform: translateX(-3px);
+}
+
+.header-left-dropdown {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.header-right {
+  display: flex;
+}
+
+.header-right--noti {
+  margin-right: 20px;
+  font-size: 16px;
+}
+.header-right--user {
+  display: flex;
+}
+.header-right--user-name {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.header-right--select {
+  margin-left: 6px;
+  background-position: -1076px -28px !important;
+}
+
+.header-right--noti {
+  background-position: 39.45% 1.6%;
+}
+
+.header-right--user {
+  cursor: pointer;
+}
+.header-right--user-avt {
+  margin-right: 6px;
+  background-position: 17.9% 47.7%;
+  border-radius: 40%;
+}

@@ -1,0 +1,46 @@
+:root {
+  --text-title: #000;
+  --text-primary: #212121;
+  --text-secondary: #666666;
+  --text-disable: #9e9e9e;
+  --border-color: #e0e0e0;
+
+  --color-primary: #089740;
+  --color-primary-hover: #39ac66;
+  --color-primary-press: #067933;
+  --color-click: #033c1a;
+  --color-hover: #39ac66;
+  --color-border: #babec5;
+  --background-color: #f7f7f7;
+  --header-height: 48px;
+  --sidebar-width: 200px;
+
+  --table-sticky-index: 1;
+  --form-zindex: 999;
+  --dialog-zindex: 1000;
+  --table-width: 2026px;
+  --table-footer-height: 62px;
+  --table-header-height: 34px;
+  --table-row-height: 44px;
+  --input-height: 32px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+body {
+  margin: unset;
+}
+
+::-webkit-input-placeholder {
+  font-style: italic;
+}

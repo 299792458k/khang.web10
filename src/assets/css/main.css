@@ -1,0 +1,85 @@
+@import url(./base/base.css);
+@import url(./base/button.css);
+@import url(./base/dialog.css);
+@import url(./base/dropdown.css);
+@import url(./base/table.css);
+@import url(./base/icon.css);
+@import url(./base/form.css);
+
+html {
+  font-family: khang;
+}
+
+@font-face {
+  font-family: khang;
+  src: url(.././fonts/notosans-regular.2cb88a13.woff2);
+}
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.body {
+  /* overflow: hidden; */
+  height: 100%;
+  width: calc(100vw - var(--sidebar-width));
+}
+.header {
+  padding: 0 24px;
+  display: flex;
+  height: var(--header-height);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left--menu {
+  padding-right: 16px;
+}
+
+.header-left--title {
+  margin-right: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.header-left--select {
+  transform: translateY(-1px);
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--color-primary);
+  color: var(--color-primary);
+  accent-color: var(--color-primary);
+}
+
+.k-tooltip {
+  position: absolute;
+  font-size: 10px;
+  font-weight: 300;
+  border: 1px solid #777;
+  background-color: #f7f7f7;
+  border-radius: 2px;
+  padding: 0 4px;
+  color: black;
+  text-transform: none;
+  display: none;
+  top: 80%;
+  line-height: 18px;
+  right: -20px;
+  z-index: 999;
+}
+.k-tooltip.show {
+  display: block;
+}
+.target-tooltip {
+  position: relative;
+}
+.target-tooltip:hover .k-tooltip {
+  display: block;
+}
